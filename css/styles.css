@@ -2,19 +2,19 @@ body {
   margin: 0;
   text-align: center;
   font-family: 'Merriweather', serif;
-  text-color: #40514E;
 }
 
 h1 {
-  margin: 50px auto 0 auto;
-  font-size: 5.625em;
-  font-family: 'Sacramento', cursive;
-  color: #66BFBF;
+  margin: 2% auto 3% auto;
+  font-size: 4.5rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
 
 h2 {
   font-family: 'Merriweather', serif;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   color: #66BFBF;
   font-weight: normal;
 }
@@ -24,30 +24,97 @@ h3 {
   color: #11999E;
 }
 
+.white-text-bold {
+  color: #f0fafa;
+  font-family: 'Arial';
+  font-weight: bold;
+}
+
+.sacramento-text {
+  font-family: 'Sacramento', cursive;
+}
+
+#work-section, #profile-section, #education-section{
+  margin: 5% auto 5% auto;
+}
+
+#education-section {
+  padding: 2%;
+}
+.section-div {
+  padding: 2%;
+}
+
+#top-section{
+  background-color: #66BFBF;
+  margin-bottom: 5%;
+}
+
+#work-section,#education-section{
+  background-color: #7cebeb;
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+  margin-right: 2rem;
+}
+
+.download-button {
+   background: #7CEBEB;
+   background-image: -webkit-linear-gradient(top, #7CEBEB, #7CEBEB);
+   background-image: -moz-linear-gradient(top, #7CEBEB, #7CEBEB);
+   background-image: -ms-linear-gradient(top, #7CEBEB, #7CEBEB);
+   background-image: -o-linear-gradient(top, #7CEBEB, #7CEBEB);
+   background-image: -webkit-gradient(to bottom, #7CEBEB, #7CEBEB);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-size: 20px;
+   font-weight: 100;
+   padding: 10px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.download-button:hover {
+   background: #11999E;
+   border: solid #11999E 1px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+.nav-link {
+  font-size: 1.3rem;
+  font-weight: lighter;
+  color: white;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 10%;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
 
 .top-container {
-  background-color: #E4F9F5;
   position: relative;
-  padding-top: 100px;
+  padding-bottom: 6%;
 }
 
-.middle-container {}
-
-.bottom-container {
+.bottom-container-contact {
+  margin-top: 3%;
   background-color: #66BFBF;
   padding: 25px;
-}
-
-.top-cloud {
-  position: absolute;
-  right: 300px;
-  top: 50px;
-}
-
-.bottom-cloud {
-  position: absolute;
-  left: 300px;
-  top: 220px;
 }
 
 .profile-image {
@@ -64,16 +131,16 @@ h3 {
   margin-right: 30px;
 }
 
-.computer-image {
+.logo-image {
   border-radius: 50%;
-  width: 25%;
+  width: 15%;
   float: right;
   margin-left: 30px;
 }
 
-.skill-row {
-  width: 50%;
-  margin: 5% auto 5% auto;
+.content-row {
+  width: 70%;
+  margin: 7% auto 7% auto;
   text-align: left;
   line-height: 2;
 }
@@ -105,21 +172,83 @@ h3 {
   margin-top: 2%;
 }
 
-.footer-link {
+.project-link, .footer-link {
   color: #11999E;
+  text-decoration: none;
+}
+.footer-link {
   margin-left: 5%;
   margin-right: 5%;
 }
 
 .dotted-hr {
-  width: 10%;
-  margin-top: 40px;
+  width: 70%;
+  margin: 40px auto 40px auto;
   border-top: 1px dotted grey;
 }
 
 .profile {
   width: 50%;
-  margin: 0 auto 0 auto;
+  margin: 4% auto 0 auto;
   text-align: center;
   line-height: 2;
 }
+
+.work-div {
+  padding: 5%;
+}
+
+/* Education */
+
+
+
+/* Project Section */
+
+/* Bottom Section */
+#contact-section{
+  padding-top: 3%;
+  background-color: #66BFBF;
+}
+
+form { max-width:60%; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Arial;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid white;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid white; }
+
+textarea {
+  height: 250px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:white;
+  cursor:pointer;
+  color:#66BFBF;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  border: 0;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#7cebeb;}

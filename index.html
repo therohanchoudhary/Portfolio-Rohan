@@ -4,52 +4,146 @@
 <head>
   <meta charset="utf-8">
   <title>Rohan Choudhary</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
-  <div class="top-container">
+  <!-- Top Section  -->
 
-    <img src="images/cloud.png" alt="cloud-img" class="top-cloud">
-    <h1>I am Rohan</h1>
-    <h2>A Software Developer</h2>
+  <section id="top-section">
 
-    <img src="images/cloud.png" alt="cloud-img" class="bottom-cloud">
+    <nav class="navbar navbar-expand-lg navbar-dark">
 
-    <img src="images/rohan.jpeg" alt="Rohan Choudhary Profile Photo" class="profile-image">
-    <!-- <br>
-    <img src="/Users/rohanvirangna/Desktop/Web Projects/CSS My Site/images/mountain.png" alt="mountain-img"> -->
-  </div>
+      <a class="navbar-brand">Welcome</a>
 
-  <div class="middle-container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#skill-section">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work-section">Work Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education-section">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project-section">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <div class="top-container">
+      <h1 class="sacramento-text">I am Rohan</h1>
+      <h2 style="color:white;">A Software Developer</h2>
+      <img src="images/rohan.jpeg" alt="Rohan Choudhary Profile Photo" class="profile-image">
+    </div>
+
+  </section>
+
+  <!-- Profile Section  -->
+  <section id="profile-section">
     <div class="profile">
 
       <h2>Hello</h2>
       <p>
-        I am Rohan Choudhary, a Software Developer with keen interest in learning new skills.
-        I am currently a pre-final year student studying BTech Computer Science at YMCA University.
-        I have strong hold over Flutter development, Data Structures, Algorithms & Frontend Development.
+        I am a BTech Computer-Science student at YMCA University Faridabad.
+        Currently, I am the Secretary of Career & Counselling cell of YMCA University.
+        I have a good hold over developing full stack mobile applications using Flutter in Android Studio IDE.
+        I am a great public speaker in the field of awareness & have won many accolades in the form of cash prizes & certificates.
+        I have a great interest in reading books, as they help me to increase my philosophical arsenal.
       </p>
+      <a href="downloadable/resume.pdf" target="_blank" class="download-button" download>Download Resume</a>
+
     </div>
 
-    <hr class="dotted-hr">
-    <div class="skills">
+  </section>
+
+
+  <!-- Work Experience Section  -->
+
+  <section id="work-section">
+
+    <div class="section-div">
+      <h1>Work Experience</h2>
+        <div class="content-row">
+          <img class="logo-image" src="images/cnc_logo.png" alt="cnc_logo-image">
+          <h4 class=""><strong><em>Secretary</em></strong><br>Career & Counselling Cell<br>JC Bose UST - YMCA Faridabad</h4>
+          <p>
+            Organized various career related seminars ranging from public speaking to UPSC
+            Preparation to Foreign Studies to Software roles preparation.
+            I play the role of a mentor to junior members of the cell which in turn help other
+            students of the university leading to a chain effect.
+          </p>
+        </div>
+        <div class="content-row">
+          <img class="logo-image" src="images/computer.png" alt="computer-image">
+          <h4 class=""><strong><em>Flutter & MERN Stack Developer</em></strong><br>Startup Cell<br>JC Bose UST - YMCA Faridabad</h4>
+          <p>
+            Currently working on spreading & creating a software development
+            ecosystem in university through proper implementation using mobile
+            development skills enhancement & working on the ideas of the professors.
+          </p>
+        </div>
+        <div class="content-row">
+          <img class="logo-image" src="images/flutter.png" alt="flutter-image">
+          <h4 class=""><strong><em>Former Flutter Developer Intern</strong></em><br>Cogent Web Services</h4>
+          <p>
+            Built various e-commerce apps using flutter framework<br>
+            These apps include<br>
+            - User Applications<br>
+            - Admin Panels<br>
+            - Online Classes Application<br>
+            These apps are uploaded on the world wide web & google play store.
+          </p>
+        </div>
+    </div>
+
+  </section>
+
+
+  <!-- Skill Section  -->
+
+  <section id="skill-section">
+
+    <div class="section-div">
       <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="computer-image" src="images/flutter.png" alt="flutter-image">
+      <div class="content-row">
+        <img class="logo-image" src="images/flutter.png" alt="flutter-image">
         <h3>Flutter Developement</h3>
         <p>
           Flutter is a framework designed by Google to build cross platform apps in Android, IOS as well as web apps.
-          I have a past internship experience in flutter where I built various e-commerce apps using flutter.
+          I have a past internship experience in flutter where I built various e-commerce apps using this framework.
         </p>
       </div>
-      <div class="skill-row">
-        <img class="computer-image" src="images/computer.png" alt="computer-image">
+      <div class="content-row">
+        <img class="logo-image" src="images/computer.png" alt="computer-image">
         <h3>Problem Solving</h3>
         <p>
           Problem solving is an important skill which every developer should have.
@@ -58,7 +152,7 @@
         </p>
       </div>
 
-      <div class="skill-row">
+      <div class="content-row">
         <h3>Other Skills</h3>
         <ul>
           <li>Web Development</li>
@@ -70,21 +164,181 @@
         </ul>
       </div>
     </div>
-    <hr class="dotted-hr">
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <a href="mailto:rohanchoudhary12122000@gmail.com" class="BUTTON_OKG">CONTACT ME</a>
+
+  </section>
+
+  <!-- Education Section  -->
+
+  <section id="education-section">
+    <h1>Education</h1>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <h3>JEE Mains</h3>
+          <p>
+            Scored 25k Rank out of 12 Lakh Candidates<br>
+            97.8 Percentile
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <h3>Class 12th</h3>
+          <p>
+            Scored 91.4% Overall.<br>
+            95% in PCM<br>
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <h3>Class 10th</h3>
+          <p>
+            Scored 10 CGPA Overall<br>
+            2015-2016
+          </p>
+        </div>
+
+      </div>
     </div>
-  </div>
+
+  </section>
+
+  <!-- Projects Section  -->
+  <section id="project-section">
+
+    <div class="section-div">
+      <h2>My Projects</h2>
+
+      <div class="content-row">
+
+        <h3>
+          <a href="https://github.com/therohanchoudhary/Genie_Vendor_App" target="_blank" class="project-link">
+            Geniemart Vendor Application <i class="fas fa-link w3-large"></i>
+          </a>
+        </h3>
+
+        <p>
+          From this app sellers can add products in the main Geniemart app
+          using firebase as the database.
+          He/she can also view their current orders & past order history.<br><br>
+          Tech Stack:<br>
+        <ul>
+          <li>Flutter</li>
+          <li>Flutter Web</li>
+          <li>Firebase Auth</li>
+          <li>Firestore Database</li>
+          <li>Firebase Hoisting</li>
+          <li>Firebase Storage</li>
+        </ul>
+        </p>
+      </div>
 
 
-  <div class="bottom-container">
-    <a class="footer-link" target="_blank" href="https://www.linkedin.com/in/rohan-choudhary-a22918176/">LinkedIn</a>
-    <a class="footer-link" target="_blank" href="https://github.com/therohanchoudhary">Github</a>
-    <a class="footer-link" target="_blank" href="https://auth.geeksforgeeks.org/user/beastslayer/">GeeksForGeeks</a>
-    <a class="footer-link" target="_blank" href="https://leetcode.com/rohanchoudhary2000/">LeetCode</a>
-    <p class="copyright-text">© 2021 Rohan Choudhary.</p>
-  </div>
+      <div class="content-row">
+
+        <h3>
+          <a href="https://github.com/therohanchoudhary/CoronaTrackerApp" target="_blank" class="project-link">
+            COVID Tracker App <i class="fas fa-link w3-large"></i>
+          </a>
+        </h3>
+        <p>
+          Application that tracks Covid-19 cases stats. Features include <br>
+        <ul>
+          <li>Rest API Integration with Flutter</li>
+          <li>World Stats (Total cases, recovered, active, deaths)</li>
+          <li>Indian Stats</li>
+          <li>Indian State's Stats individually</li>
+          <li>General COVID info</li>
+          <li>Latest news regarding Coronavirus</li>
+          <li>Prevention methods</li>
+        </ul>
+        </p>
+      </div>
+
+
+      <div class="content-row">
+
+        <h3>
+          <a href="https://github.com/therohanchoudhary/Geniemart-Delivery" target="_blank" class="project-link">
+            Geniemart Delivery Application <i class="fas fa-link w3-large"></i>
+          </a>
+        </h3>
+
+        <p>
+          From this app delivery person can take orders when the seller
+          from the vendor app places his/her order ready for delivery.
+          Through this, the delivery person can also keep track of his
+          current & previous orders.<br><br>
+          Tech Stack:<br>
+        <ul>
+          <li>Flutter</li>
+          <li>Flutter Web</li>
+          <li>Firebase Auth</li>
+          <li>Firestore Database</li>
+          <li>Firebase Hoisting</li>
+          <li>Firebase Storage</li>
+        </ul>
+        </p>
+      </div>
+
+
+      <div class="content-row">
+
+        <h3>
+          <a href="https://github.com/therohanchoudhary/Gym-App-Flutter" target="_blank" class="project-link">
+            Gym App <i class="fas fa-link w3-large"></i>
+          </a>
+        </h3>
+        <p>
+          A portfolio app of The Body Move Fitness : Neeti Nagar Delhi.
+          App consists of gallery & plan information alongside professional fitness tips.
+          Built using Flutter.
+        </p>
+      </div>
+
+      <div class="content-row">
+
+        <h3>
+          <a href="https://github.com/therohanchoudhary/BMI-Calculator" target="_blank" class="project-link">
+            BMI Calculator App <i class="fas fa-link w3-large"></i>
+          </a>
+        </h3>
+        <p>
+          A simple app with materail UI that calculates the body mass index
+          of an individual which is a great formula to assess your weight
+          requirements as per your height using Flutter framework.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Contact Section  -->
+  <section id="contact-section">
+
+    <div class="contact-me">
+      <h2 class="white-text-bold">CONTACT</h2>
+
+      <form action="mailto:rohanchoudhary12122000@gmail.com" method="POST" enctype="text/plain">
+        <input name="name" type="text" class="feedback-input" placeholder="Name" />
+        <input name="mail" type="email" class="feedback-input" placeholder="Email" />
+        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+        <input type="submit" value="SUBMIT" />
+      </form>
+
+      <a href="mailto:rohanchoudhary12122000@gmail.com" class="download-button">Contact via Email</a>
+    </div>
+
+    <div class="bottom-container-contact">
+      <a class="footer-link" target="_blank" href="https://www.linkedin.com/in/rohan-choudhary-a22918176/">LinkedIn</a>
+      <a class="footer-link" target="_blank" href="https://github.com/therohanchoudhary">Github</a>
+      <a class="footer-link" target="_blank" href="https://auth.geeksforgeeks.org/user/beastslayer/">GeeksForGeeks</a>
+      <a class="footer-link" target="_blank" href="https://leetcode.com/rohanchoudhary2000/">LeetCode</a>
+      <p class="copyright-text">© 2021 Rohan Choudhary.</p>
+    </div>
+  </section>
 
 </body>
 
