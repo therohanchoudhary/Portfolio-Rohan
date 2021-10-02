@@ -7,7 +7,6 @@ body {
 h1 {
   margin: 2% auto 3% auto;
   font-size: 4.5rem;
-  color: white;
   font-weight: bold;
   text-align: center;
 }
@@ -15,17 +14,16 @@ h1 {
 h2 {
   font-family: 'Merriweather', serif;
   font-size: 3.5rem;
-  color: #66BFBF;
   font-weight: normal;
 }
 
 h3 {
   font-family: 'Merriweather', serif;
-  color: #11999E;
+  color: black;
 }
 
 .white-text-bold {
-  color: #f0fafa;
+  color: white;
   font-family: 'Arial';
   font-weight: bold;
 }
@@ -34,24 +32,36 @@ h3 {
   font-family: 'Sacramento', cursive;
 }
 
-#work-section, #profile-section, #education-section{
+#work-section, #profile-section, #education-section, #resume-section{
   margin: 5% auto 5% auto;
 }
 
-#education-section {
-  padding: 2%;
-}
-.section-div {
-  padding: 2%;
-}
-
-#top-section{
-  background-color: #66BFBF;
+#top-section, #skill-section, #project-section, #section-div {
+  background-color: #0f3a5d;
   margin-bottom: 5%;
+  color: white;
 }
 
-#work-section,#education-section{
-  background-color: #7cebeb;
+#contact-section {
+  padding-top: 3%;
+  background-color: #0f3a5d;
+  color: white;
+}
+
+#work-section, #profile-section, #education-section, #resume-section > h1,h2,h3 {
+  color: #0f3a5d;
+}
+
+.main-color {
+  color: #0f3a5d;
+}
+
+#top-section, #skill-section, #project-section > h1,h2,h3 {
+  color: white;
+}
+
+#education-section, .section-div {
+  padding: 2%;
 }
 
 .navbar {
@@ -59,17 +69,11 @@ h3 {
   margin-right: 2rem;
 }
 
-.download-button {
-   background: #7CEBEB;
-   background-image: -webkit-linear-gradient(top, #7CEBEB, #7CEBEB);
-   background-image: -moz-linear-gradient(top, #7CEBEB, #7CEBEB);
-   background-image: -ms-linear-gradient(top, #7CEBEB, #7CEBEB);
-   background-image: -o-linear-gradient(top, #7CEBEB, #7CEBEB);
-   background-image: -webkit-gradient(to bottom, #7CEBEB, #7CEBEB);
+.download-button,.send-email-button {
    -webkit-border-radius: 20px;
    -moz-border-radius: 20px;
    border-radius: 20px;
-   color: #FFFFFF;
+   
    font-family: Arial;
    font-size: 20px;
    font-weight: 100;
@@ -80,13 +84,42 @@ h3 {
    text-align: center;
 }
 
-.download-button:hover {
-   background: #11999E;
-   border: solid #11999E 1px;
+.send-email-button {
+  background: white;
+  background-image: -webkit-linear-gradient(top, white, white);
+  background-image: -moz-linear-gradient(top, white, white);
+  background-image: -ms-linear-gradient(top, white, white);
+  background-image: -o-linear-gradient(top, white, white);
+  background-image: -webkit-gradient(to bottom, white, white);
+  color: #0f3a5d;
+}
+
+.download-button {
+  background: #0f3a5d;
+  background-image: -webkit-linear-gradient(top, #0f3a5d, #0f3a5d);
+  background-image: -moz-linear-gradient(top, #0f3a5d, #0f3a5d);
+  background-image: -ms-linear-gradient(top, #0f3a5d, #0f3a5d);
+  background-image: -o-linear-gradient(top, #0f3a5d, #0f3a5d);
+  background-image: -webkit-gradient(to bottom, #0f3a5d, #0f3a5d);
+  color: #FFFFFF;
+}
+
+.send-email-button:hover, .download-button:hover {
    -webkit-border-radius: 20px;
    -moz-border-radius: 20px;
    border-radius: 20px;
    text-decoration: none;
+}
+
+.send-email-button:hover {
+  background: #1f78c0;
+  color: white;
+}
+
+.download-button:hover {
+  background: #1f78c0;
+  color: white;
+  border: solid #1f78c0 1px;
 }
 
 .nav-link {
@@ -113,14 +146,13 @@ h3 {
 
 .bottom-container-contact {
   margin-top: 3%;
-  background-color: #66BFBF;
+  background-color: #0f3a5d;
   padding: 25px;
 }
 
 .profile-image {
-  border-radius: 50%;
-  width: 20%;
-  height: 20%;
+  width: 40%;
+  height: 35%;
   margin: 5% auto 5% auto;
 }
 
@@ -147,11 +179,11 @@ h3 {
 
 .BUTTON_OKG {
    background: #66BFBF;
-   background-image: -webkit-linear-gradient(top, #66BFBF, #66BFBF);
-   background-image: -moz-linear-gradient(top, #66BFBF, #66BFBF);
-   background-image: -ms-linear-gradient(top, #66BFBF, #66BFBF);
-   background-image: -o-linear-gradient(top, #66BFBF, #66BFBF);
-   background-image: -webkit-gradient(to bottom, #66BFBF, #66BFBF);
+   background-image: -webkit-linear-gradient(top, #0f3a5d, #0f3a5d);
+   background-image: -moz-linear-gradient(top, #0f3a5d, #0f3a5d);
+   background-image: -ms-linear-gradient(top, #0f3a5d, #0f3a5d);
+   background-image: -o-linear-gradient(top, #0f3a5d, #0f3a5d);
+   background-image: -webkit-gradient(to bottom, #0f3a5d, #0f3a5d);
    -webkit-border-radius: 10px;
    -moz-border-radius: 10px;
    border-radius: 10px;
@@ -173,9 +205,10 @@ h3 {
 }
 
 .project-link, .footer-link {
-  color: #11999E;
+  color: #FFFFFF;
   text-decoration: none;
 }
+
 .footer-link {
   margin-left: 5%;
   margin-right: 5%;
@@ -198,17 +231,6 @@ h3 {
   padding: 5%;
 }
 
-/* Education */
-
-
-
-/* Project Section */
-
-/* Bottom Section */
-#contact-section{
-  padding-top: 3%;
-  background-color: #66BFBF;
-}
 
 form { max-width:60%; margin:50px auto; }
 
@@ -220,7 +242,7 @@ form { max-width:60%; margin:50px auto; }
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid white;
+  border:0.5px solid white;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -229,7 +251,7 @@ form { max-width:60%; margin:50px auto; }
   outline:0;
 }
 
-.feedback-input:focus { border:2px solid white; }
+.feedback-input:focus { border:0.5px solid white; }
 
 textarea {
   height: 250px;
@@ -242,7 +264,7 @@ textarea {
   width: 100%;
   background:white;
   cursor:pointer;
-  color:#66BFBF;
+  color:#0f3a5d;
   font-size:24px;
   padding-top:10px;
   padding-bottom:10px;
@@ -251,4 +273,4 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
-[type="submit"]:hover { background:#7cebeb;}
+[type="submit"]:hover { background:#207cc7; color:white;}
